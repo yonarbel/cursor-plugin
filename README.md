@@ -1,34 +1,33 @@
-# Cursor plugin template
+# JFrog Cursor Plugin
 
-Build and publish Cursor Marketplace plugins from a single repo.
+JFrog Platform integration for [Cursor](https://cursor.com) — artifact management, security scanning, and supply-chain best practices powered by the JFrog MCP Server.
 
-Two starter plugins are included:
+## What's included
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+| Component | Path | Description |
+|---|---|---|
+| **MCP** | `plugins/jfrog/mcp.json` | Remote JFrog MCP server (OAuth, no API keys) |
+| **Skill** | `plugins/jfrog/skills/jfrog-platform/` | AI guidance for JFrog Platform operations |
+| **Rule** | `plugins/jfrog/rules/jfrog-security.mdc` | Supply-chain security practices for dependency files |
+| **Agent** | `plugins/jfrog/agents/supply-chain-security.md` | Dependency audit for CVEs, licenses, and curation |
 
-## Getting started
+## Prerequisites
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+1. A **JFrog Cloud (SaaS)** subscription.
+2. An admin enables the **JFrog MCP Server** on the platform:
+   - **Administration > General > Settings > MCP Server** → toggle ON.
+3. Each developer configures Cursor with their JFrog Platform URL (see [Setup](#setup)).
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+## Setup
 
-To add more plugins, see `docs/add-a-plugin.md`.
+1. Install the plugin in Cursor.
+2. Set the `JFROG_PLATFORM_URL` environment variable to your JFrog instance (e.g. `mycompany.jfrog.io`).
+3. Restart Cursor. An OAuth window opens in your browser — authorize access.
 
-## Single plugin vs multi-plugin
+No tokens or API keys are required. Authentication is handled via OAuth.
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+## Validation
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
-
-## Submission checklist
-
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+```bash
+node scripts/validate-template.mjs
+```

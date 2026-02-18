@@ -2,7 +2,7 @@
   "name": "jfrog-cursor-plugins",
   "owner": {
     "name": "JFrog",
-    "email": "support@jfrog.com"
+    "email": "devrel@jfrog.com"
   },
   "metadata": {
     "description": "JFrog Platform plugins for Cursor",
