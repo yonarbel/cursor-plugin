@@ -1,0 +1,22 @@
+{
+  "name": "jfrog",
+  "displayName": "JFrog Platform",
+  "version": "0.1.0",
+  "description": "JFrog Platform integration with MCP, security skills, and supply-chain best practices.",
+  "author": {
+    "name": "JFrog",
+    "email": "support@jfrog.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jfrog",
+    "artifactory",
+    "xray",
+    "security",
+    "mcp",
+    "supply-chain",
+    "devops",
+    "artifacts"
+  ],
+  "logo": "assets/logo.svg"
+}

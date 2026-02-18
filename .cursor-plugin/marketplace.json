@@ -1,24 +1,19 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "jfrog-cursor-plugins",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "JFrog",
+    "email": "support@jfrog.com"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
+    "description": "JFrog Platform plugins for Cursor",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "jfrog",
+      "source": "jfrog",
+      "description": "JFrog Platform integration with MCP, security skills, and supply-chain best practices"
     }
   ]
 }
