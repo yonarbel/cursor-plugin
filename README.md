@@ -1,4 +1,4 @@
-# JFrog Cursor Plugin
+# JFrog Cursor Plugin (Experimental)
 
 JFrog Platform integration for [Cursor](https://cursor.com) — artifact management, security scanning, and supply-chain best practices powered by the JFrog MCP Server.
 
