@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// Copyright (c) JFrog Ltd. 2025
+// Licensed under the Apache License, Version 2.0
+// https://www.apache.org/licenses/LICENSE-2.0
+
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import process from "node:process";

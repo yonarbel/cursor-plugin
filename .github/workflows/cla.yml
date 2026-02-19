@@ -1,3 +1,7 @@
+# Copyright (c) JFrog Ltd. 2025
+# Licensed under the Apache License, Version 2.0
+# https://www.apache.org/licenses/LICENSE-2.0
+
 name: "CLA Assistant"
 on:
   # issue_comment triggers this action on each comment on issues and pull requests

@@ -7,7 +7,7 @@
     "name": "JFrog",
     "email": "devrel@jfrog.com"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "jfrog",
     "artifactory",
